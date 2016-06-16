@@ -11,7 +11,11 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.awt.event.ActionEvent;
-
+/**
+ * UI界面--包括main方法
+ * @author ljheee
+ *
+ */
 public class DownloadFrame {
 
 	private JFrame jf = null;
@@ -51,13 +55,8 @@ public class DownloadFrame {
 					JOptionPane.showMessageDialog(jf, "Error: "+e.getMessage());
 				}
 				if(isFinish) JOptionPane.showMessageDialog(jf, "下载完成！");
-			
 			}
-
-			
 		});
-		
-		
 		
 		GroupLayout groupLayout = new GroupLayout(jf.getContentPane());
 		groupLayout.setHorizontalGroup(
@@ -87,9 +86,6 @@ public class DownloadFrame {
 					.addContainerGap(59, Short.MAX_VALUE))
 		);
 		jf.getContentPane().setLayout(groupLayout);
-		
-		
-		
 		
 		jf.pack();
 		jf.setVisible(true);
